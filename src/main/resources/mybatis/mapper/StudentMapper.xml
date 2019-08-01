@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ajxj.mapper.StudentMapper">
+
+<!--    public List<Student>list(Student student);-->
+    <select id="list"  resultType="com.ajxj.entities.Student">
+        select * from student_grade
+
+    </select>
+
+    <select id="findStudentId" resultType="com.ajxj.entities.Student">
+        select * from student_grade where stuId = #{stuId}
+    </select>
+    
+    <insert id="insertStudent"  >
+        insert into student_grade(stuId,stuName,stuSex,stuAge,stuGrade) values (#{stuId},#{stuName},#{stuSex},#{stuAge},#{stuGrade})
+
+    </insert>
+
+</mapper>

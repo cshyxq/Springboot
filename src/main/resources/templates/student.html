@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>学生</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>成绩</td>
+
+        </tr>
+        <tr>
+            <td th:text="${stu.stuId}"></td>
+            <td th:text="${stu.stuName}"></td>
+            <td th:text="${stu.stuSex}"></td>
+            <td th:text="${stu.stuAge}"></td>
+            <td th:text="${stu.stuGrade}"></td>
+
+        </tr>
+
+    </table>
+</body>
+</html>

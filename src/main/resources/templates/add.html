@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/add}" >
+
+    <table border="1">
+        <tr>
+            <td colspan="2">添加用户信息</td>
+        </tr>
+        <tr>
+            <td >学号</td>
+            <td>
+                <input th:type="text" name="stuId" />
+            </td>
+        </tr>
+        <tr>
+            <td>姓名</td>
+            <td>
+                <input th:type="text" name="stuName" />
+            </td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                <input th:type="text" name="stuSex" />
+            </td>
+        </tr>
+        <tr>
+            <td>年龄</td>
+            <td>
+                <input th:type="text" name="stuAge" />
+            </td>
+        </tr>
+        <tr>
+            <td>成绩</td>
+            <td>
+                <input th:type="text" name="stuGrade" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="/ssmcrud/fanhui">返回</a>
+            </td>
+            <td>
+                <input type="submit" value="提交" />
+            </td>
+        </tr>
+
+
+    </table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xlink">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>学号</td>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>年龄</td>
+        <td>成绩</td>
+
+    </tr>
+
+    <tr th:each="user : ${list}">
+        <td th:text="${user.stuId}"></td>
+        <td th:text="${user.stuName}"></td>
+        <td th:text="${user.stuSex}"></td>
+        <td th:text="${user.stuAge}"></td>
+        <td th:text="${user.stuGrade}"></td>
+
+    </tr>
+
+</table>
+<a href="/more"  >新建</a>
+
+
+</body>
+</html>
